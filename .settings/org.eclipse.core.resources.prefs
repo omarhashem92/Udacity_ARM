@@ -1,8 +1,14 @@
 eclipse.preferences.version=1
+encoding//Debug/Src/MCAL/CFGs/subdir_rules.mk=UTF-8
+encoding//Debug/Src/MCAL/CFGs/subdir_vars.mk=UTF-8
 encoding//Debug/Src/MCAL/Dio/subdir_rules.mk=UTF-8
 encoding//Debug/Src/MCAL/Dio/subdir_vars.mk=UTF-8
 encoding//Debug/Src/MCAL/Port/subdir_rules.mk=UTF-8
 encoding//Debug/Src/MCAL/Port/subdir_vars.mk=UTF-8
+encoding//Debug/Src/MCAL/SysTick/subdir_rules.mk=UTF-8
+encoding//Debug/Src/MCAL/SysTick/subdir_vars.mk=UTF-8
+encoding//Debug/Src/MCAL/Timer/subdir_rules.mk=UTF-8
+encoding//Debug/Src/MCAL/Timer/subdir_vars.mk=UTF-8
 encoding//Debug/Src/MCAL/subdir_rules.mk=UTF-8
 encoding//Debug/Src/MCAL/subdir_vars.mk=UTF-8
 encoding//Debug/makefile=UTF-8

@@ -39,6 +39,40 @@ typedef enum{
     E_NOT_OK,
     E_OK
 }Std_ReturnType;
+
+
+
+
+
+
+
+
+
+
+
+# define STD_ACTIVE   1u /* Logical state active */
+# define STD_IDLE     0u /* Logical state idle */
+
+# define STD_ON       1u
+# define STD_OFF      0u
+
+/**********************************************************************************************************************
+ *  GLOBAL DATA TYPES AND STRUCTURES
+ *********************************************************************************************************************/
+
+
+#define E_OK          0u
+#define E_NOT_OK      1u
+
+
+
+
+
+
+
+
+
+
 /*********************************************************************************************************************/
 /* Type definition for byte and bit access                                                                           */
 typedef union

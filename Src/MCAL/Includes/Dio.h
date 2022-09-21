@@ -43,7 +43,7 @@ u8 Dio_ReadChannel (u8 Port, Dio_ChannelType ChannelId);
 void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level);
 u8 Dio_ReadPort (u8 PortId);
 void Dio_WritePort (u8 PortId, u8 Level);
-u8 Dio_FlipChannel(Dio_ChannelType ChannelId);
+void Dio_FlipChannel(u8 PortId, Dio_ChannelType ChannelId);
 
 #endif  /* DIO_H */
 
