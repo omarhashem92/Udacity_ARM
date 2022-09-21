@@ -573,9 +573,9 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
 {
 
     //temporary for testing
-        RCGCGPIO = 0x20U;
-        DDR_F = 0x0EU;
-        DEN_F = 0x0EU;
+       // RCGCGPIO = 0x20U;
+        //DDR_F = 0x0EU;
+        //DEN_F = 0x0EU;
 
     switch (PortId)
     {
@@ -588,6 +588,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_A, ChannelId);
                 }
+                break;
     case Port_B:
                 if (Level == STD_LOW)
                 {
@@ -597,6 +598,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_B, ChannelId);
                 }
+                break;
     case Port_C:
                 if (Level == STD_LOW)
                 {
@@ -606,6 +608,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_C, ChannelId);
                 }
+                break;
     case Port_D:
                 if (Level == STD_LOW)
                 {
@@ -615,6 +618,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_D, ChannelId);
                 }
+                break;
     case Port_E:
                 if (Level == STD_LOW)
                 {
@@ -624,6 +628,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_E, ChannelId);
                 }
+                break;
     case Port_F:
                 if (Level == STD_LOW)
                 {
@@ -634,6 +639,7 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
                 {
                     SET_BIT(Data_F, ChannelId);
                 }
+
     }
 
 }
@@ -653,10 +659,63 @@ void Dio_WriteChannel (u8 PortId, Dio_ChannelType ChannelId, u8 Level)
 void Dio_WritePort (u8 PortId, u8 Level)
 {
 
-
-
-
+    /* temoprary for testing */
+           // RCGCGPIO = 0x20U;
+            //DDR_F = 0x0EU;
+           // DEN_F = 0x0EU;
+    switch (PortId)
+        {
+    case Port_A:
+                Data_A = Level;
+                break;
+    case Port_B:
+                Data_B = Level;
+                break;
+    case Port_C:
+                Data_C = Level;
+                break;
+    case Port_D:
+                Data_D = Level;
+                break;
+    case Port_E:
+                Data_E = Level;
+                break;
+    case Port_F:
+                Data_F = Level;
+        }
 }
+
+
+
+
+
+void Dio_FlipChannel(u8 PortId, Dio_ChannelType ChannelId)
+{
+
+    switch (PortId)
+        {
+        case Port_A:
+            TOGGLE_BIT(Data_A, ChannelId);
+                    break;
+        case Port_B:
+            TOGGLE_BIT(Data_B, ChannelId);
+                    break;
+        case Port_C:
+            TOGGLE_BIT(Data_C, ChannelId);
+                    break;
+        case Port_D:
+            TOGGLE_BIT(Data_D, ChannelId);
+                    break;
+        case Port_E:
+            TOGGLE_BIT(Data_E, ChannelId);
+                    break;
+        case Port_F:
+
+                    TOGGLE_BIT(Data_F, ChannelId);
+        }
+
+ }
+
 
 
 
